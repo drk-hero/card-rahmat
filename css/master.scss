@@ -1,0 +1,164 @@
+*,
+ ::after,
+ ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    color: #8d8d8d;
+    text-decoration: none;
+}
+
+.main-header {
+    background: rgb(94, 94, 94);
+    width: 100%;
+    // height: 100vh;
+    .seaction-header {
+        .clock-global {
+            h4 {
+                min-height: 25px;
+                font-size: 18px;
+                color: #7d8396;
+            }
+        }
+        padding-top: 100px;
+        .div-body {
+            // height: 400px;
+            padding: 20px;
+            background-color: #1b2028;
+            border-radius: 16px;
+            position: relative;
+            border: 3px solid transparent;
+            background-clip: padding-box;
+            text-align: center;
+            color: #f1f3f3;
+            box-shadow: 0 0 10px 10px #ffffff12;
+            background-image: linear-gradient(135deg, rgb(226 202 210 / 21%), rgba(115, 74, 88, 0.1) 15%, #1b2028 20%, #1b2028 100%);
+            .image-radius {
+                display: flex;
+                flex-flow: column nowrap;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                img {
+                    width: 160px;
+                    height: 160px;
+                    border-radius: 50%;
+                    border: 1px solid #1b2028;
+                    margin-bottom: 20px;
+                }
+                figcaption {
+                    font-size: 20px;
+                    text-transform: capitalize;
+                    text-shadow: 2px 2px 10px #8d8d8d;
+                }
+                a {
+                    display: flex;
+                    color: #8d8d8d;
+                    font-size: 16px;
+                    margin-top: 10px;
+                    transition: all .5s;
+                    i {
+                        transition: all .5s;
+                        opacity: 0;
+                        margin-left: 8px;
+                    }
+                    &:hover {
+                        transform: perspective(800px) translateZ(100px);
+                        color: rgb(184, 184, 184);
+                        i {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+            .heart-ani {
+                color: #e62538 !important;
+                border: 3px solid #e62538 !important;
+                animation: heartani 1s linear backwards;
+                // transform: perspective(800px) translateZ(50px);
+                @keyframes heartani {
+                    0% {
+                        box-shadow: 0px 1px 20px 10px #e625382b;
+                    }
+                    70% {
+                        box-shadow: 0px 1px 37px 16px #e625389e;
+                    }
+                    100% {
+                        box-shadow: 0px 1px 20px 10px #e6253800;
+                    }
+                }
+            }
+            .icon-more {
+                width: 50px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                border: 3px solid #343945;
+                color: #7d8396;
+                cursor: pointer;
+                transition: all .5s;
+                margin: auto;
+                &:hover {
+                    border: 3px solid #d6d6d6;
+                    i {
+                        transition: all .5s;
+                        color: #d6d6d6;
+                    }
+                }
+                .trasform-i {
+                    transform: rotate(90deg);
+                    padding-left: 5px;
+                }
+                i {
+                    padding-top: 5px;
+                    font-size: 22px;
+                }
+                >.icon-more {
+                    top: -3px;
+                    left: -3px;
+                    position: absolute;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: all .5s;
+                }
+                >.icon-more.more-click {
+                    opacity: 1;
+                    visibility: visible;
+                }
+                #more-clickone {
+                    top: -55px;
+                    left: -35px;
+                }
+                #more-clicktwo {
+                    top: -55px;
+                    left: 20px;
+                }
+                #more-clicktree {
+                    top: -20px;
+                    left: 63px;
+                }
+            }
+            .info-rahmat {
+                height: 0;
+                opacity: 0;
+                visibility: hidden;
+                text-transform: capitalize;
+                text-align: center;
+                padding: 0 10px;
+                line-height: 25px;
+                overflow: hidden;
+                transition: all 1s;
+            }
+        }
+    }
+}
