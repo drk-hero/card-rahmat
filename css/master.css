@@ -1,0 +1,178 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: #8d8d8d;
+  text-decoration: none;
+}
+
+.showoff {
+  height: 100% !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.main-header {
+  background: rgb(94, 94, 94);
+  width: 100%;
+  min-height: 100vh;
+}
+.main-header .seaction-header {
+  padding-top: 100px;
+}
+.main-header .seaction-header .clock-global h4 {
+  min-height: 25px;
+  font-size: 18px;
+  color: #7d8396;
+}
+.main-header .seaction-header .div-body {
+  padding: 20px;
+  background-color: #1b2028;
+  border-radius: 16px;
+  position: relative;
+  border: 3px solid transparent;
+  background-clip: padding-box;
+  text-align: center;
+  color: #f1f3f3;
+  box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.0705882353);
+  background-image: linear-gradient(135deg, rgba(226, 202, 210, 0.21), rgba(115, 74, 88, 0.1) 15%, #1b2028 20%, #1b2028 100%);
+}
+.main-header .seaction-header .div-body .image-radius {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.main-header .seaction-header .div-body .image-radius img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 1px solid #1b2028;
+  margin-bottom: 20px;
+}
+.main-header .seaction-header .div-body .image-radius figcaption {
+  font-size: 20px;
+  text-transform: capitalize;
+  text-shadow: 2px 2px 10px #8d8d8d;
+}
+.main-header .seaction-header .div-body .image-radius a {
+  display: flex;
+  color: #8d8d8d;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: all 0.5s;
+}
+.main-header .seaction-header .div-body .image-radius a i {
+  transition: all 0.5s;
+  opacity: 0;
+  margin-left: 8px;
+}
+.main-header .seaction-header .div-body .image-radius a:hover {
+  transform: perspective(800px) translateZ(100px);
+  color: rgb(184, 184, 184);
+}
+.main-header .seaction-header .div-body .image-radius a:hover i {
+  opacity: 1;
+}
+.main-header .seaction-header .div-body .heart-ani {
+  color: #e62538 !important;
+  border: 3px solid #e62538 !important;
+  -webkit-animation: heartani 1s linear backwards;
+          animation: heartani 1s linear backwards;
+}
+@-webkit-keyframes heartani {
+  0% {
+    box-shadow: 0px 1px 20px 10px rgba(230, 37, 56, 0.168627451);
+  }
+  70% {
+    box-shadow: 0px 1px 37px 16px rgba(230, 37, 56, 0.6196078431);
+  }
+  100% {
+    box-shadow: 0px 1px 20px 10px rgba(230, 37, 56, 0);
+  }
+}
+@keyframes heartani {
+  0% {
+    box-shadow: 0px 1px 20px 10px rgba(230, 37, 56, 0.168627451);
+  }
+  70% {
+    box-shadow: 0px 1px 37px 16px rgba(230, 37, 56, 0.6196078431);
+  }
+  100% {
+    box-shadow: 0px 1px 20px 10px rgba(230, 37, 56, 0);
+  }
+}
+.main-header .seaction-header .div-body .icon-more {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 3px solid #343945;
+  color: #7d8396;
+  cursor: pointer;
+  transition: all 0.5s;
+  margin: auto;
+}
+.main-header .seaction-header .div-body .icon-more:hover {
+  border: 3px solid #d6d6d6;
+}
+.main-header .seaction-header .div-body .icon-more:hover i {
+  transition: all 0.5s;
+  color: #d6d6d6;
+}
+.main-header .seaction-header .div-body .icon-more .trasform-i {
+  transform: rotate(90deg);
+  padding-left: 5px;
+}
+.main-header .seaction-header .div-body .icon-more i {
+  padding-top: 5px;
+  font-size: 22px;
+}
+.main-header .seaction-header .div-body .icon-more > .icon-more {
+  top: -3px;
+  left: -3px;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+.main-header .seaction-header .div-body .icon-more > .icon-more.more-click {
+  opacity: 1;
+  visibility: visible;
+}
+.main-header .seaction-header .div-body .icon-more #more-clickone {
+  top: -55px;
+  left: -35px;
+}
+.main-header .seaction-header .div-body .icon-more #more-clicktwo {
+  top: -55px;
+  left: 20px;
+}
+.main-header .seaction-header .div-body .icon-more #more-clicktree {
+  top: -20px;
+  left: 63px;
+}
+.main-header .seaction-header .div-body .info-rahmat {
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  text-transform: capitalize;
+  text-align: center;
+  padding: 0 10px;
+  line-height: 25px;
+  overflow: hidden;
+  transition: all 1s;
+}/*# sourceMappingURL=master.css.map */
